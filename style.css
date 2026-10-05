@@ -8137,3 +8137,23 @@ img {
     }
 
 }
+
+/* =========================================
+   MOBILE NAVIGATION ANCHOR FIX
+   ========================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 90px;
+}
+
+@media (max-width: 800px) {
+
+    section[id] {
+        scroll-margin-top: 75px;
+    }
+
+}

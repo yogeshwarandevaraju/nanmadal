@@ -113,47 +113,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =========================================
-       NAVIGATION LINK CLICK
-       ========================================= */
+   NAVIGATION LINK CLICK
+   ========================================= */
 
-    navLinks.forEach((link) => {
+navLinks.forEach((link) => {
 
-        link.addEventListener("click", () => {
+    link.addEventListener("click", (event) => {
 
-            /*
-             * Remove active state
-             * from all links.
-             */
+        const targetId = link.getAttribute("href");
 
-            navLinks.forEach((item) => {
+        if (!targetId || !targetId.startsWith("#")) {
+            return;
+        }
 
-                item.classList.remove(
-                    "nm-nav-link--active"
-                );
+        const target = document.querySelector(targetId);
 
+        if (!target) {
+            return;
+        }
+
+        /* Prevent default mobile anchor behaviour */
+        event.preventDefault();
+
+        /* Active state */
+        navLinks.forEach((item) => {
+            item.classList.remove("nm-nav-link--active");
+        });
+
+        link.classList.add("nm-nav-link--active");
+
+        /* Close mobile menu */
+        closeMenu();
+
+        /* Scroll after menu has started closing */
+        requestAnimationFrame(() => {
+
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
             });
-
-
-            /*
-             * Add active state
-             * to clicked link.
-             */
-
-            link.classList.add(
-                "nm-nav-link--active"
-            );
-
-
-            /*
-             * Close mobile menu.
-             */
-
-            closeMenu();
 
         });
 
     });
 
+});
 
     /* =========================================
        CLOSE WITH ESCAPE
