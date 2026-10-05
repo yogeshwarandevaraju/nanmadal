@@ -73,7 +73,7 @@
             </a>
 
             <a
-                href="#contact"
+                href="#formfill"
                 class="nm-nav-link nm-nav-link--contact"
             >
                 Contact
@@ -149,13 +149,13 @@
 
             <div class="nm-hero__actions">
 
-                <a href="#contact" class="nm-button nm-button--primary">
+                <a href="#formfill" class="nm-button nm-button--primary">
                     <span>Create My Invite</span>
                     <span class="nm-button__arrow">↗</span>
                 </a>
 
                 <a
-                    href="https://wa.me/YOURWHATSAPPNUMBER"
+                    href="https://wa.me/919962086565"
                     class="nm-button nm-button--secondary"
                     target="_blank"
                     rel="noopener"
@@ -997,12 +997,12 @@
     </p>
 
     <div>
-      <a href="#booking" class="nm-cta-primary">
+      <a href="#formfill" class="nm-cta-primary">
         Create My Invite
       </a>
 
       <a href="https://wa.me/919962086565" class="nm-cta-secondary">
-        Talk to Nanmadal
+        Chat with Nanmadal
       </a>
     </div>
 
@@ -1012,6 +1012,187 @@
 <!-- =========================================
      CONTACT NANMADAL
 ========================================= -->
+
+<!-- =========================================
+     NANMADAL CONTACT CTA
+     ========================================= -->
+
+<section class="nm-contact-cta" id="contact-form">
+
+    <div class="nm-contact-cta__container">
+
+        <!-- LEFT: CTA CONTENT -->
+        <div class="nm-contact-cta__content">
+
+            <span class="nm-contact-cta__eyebrow">
+                <span></span>
+                LET'S TALK
+            </span>
+
+            <h2>
+                Have an idea?
+                <em>Let's make it yours.</em>
+            </h2>
+
+            <p>
+                Tell us a little about your celebration and what
+                you have in mind. We'll get back to you and take
+                it from there.
+            </p>
+
+            <div class="nm-contact-cta__statement">
+                <span>Your story.</span>
+                <span>Your style.</span>
+                <span>Your invitation.</span>
+            </div>
+
+            <a
+                href="https://wa.me/919962086565"
+                class="nm-contact-cta__whatsapp"
+                target="_blank"
+                rel="noopener"
+            >
+                <span>Chat with us on WhatsApp</span>
+                <strong>↗</strong>
+            </a>
+
+        </div>
+
+
+        <!-- RIGHT: CONTACT FORM -->
+        <div id="formfill" class="nm-contact-cta__form-wrap">
+
+            <div class="nm-contact-cta__form-heading">
+                <span>START A CONVERSATION</span>
+                <h3>Tell us about your event.</h3>
+            </div>
+
+            <form
+                class="nm-contact-form"
+                action="https://formsubmit.co/pasumaitalk@gmail.com"
+                method="POST"
+            >
+
+                <!-- FormSubmit Settings -->
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Enquiry from Nanmadal Website"
+                >
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="false"
+                >
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table"
+                >
+
+                <div class="nm-form-group">
+                    <label for="nm-name">Name</label>
+                    <input
+                        type="text"
+                        id="nm-name"
+                        name="Name"
+                        placeholder="Your name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+
+                <div class="nm-form-group">
+                    <label for="nm-mobile">
+                        Mobile / WhatsApp Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="nm-mobile"
+                        name="Mobile / WhatsApp Number"
+                        placeholder="+91 XXXXX XXXXX"
+                        autocomplete="tel"
+                        required
+                    >
+                </div>
+
+
+                <div class="nm-form-group">
+                    <label for="nm-email">Mail ID</label>
+
+                    <input
+                        type="email"
+                        id="nm-email"
+                        name="Email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+
+                <div class="nm-form-group">
+                    <label for="nm-reason">Reason of Contact</label>
+
+                    <select
+                        id="nm-reason"
+                        name="Reason of Contact"
+                        required
+                    >
+                        <option value="" disabled selected>
+                            Select a reason
+                        </option>
+
+                        <option value="Wedding Invitation">
+                            Wedding Invitation
+                        </option>
+
+                        <option value="Digital Invitation">
+                            Digital Invitation
+                        </option>
+
+                        <option value="Video Invitation">
+                            Video Invitation
+                        </option>
+
+                        <option value="Smart QR Invitation">
+                            Smart QR Invitation
+                        </option>
+
+                        <option value="Custom Design">
+                            Custom Design
+                        </option>
+
+                        <option value="Other Celebration">
+                            Other Celebration
+                        </option>
+
+                        <option value="General Enquiry">
+                            General Enquiry
+                        </option>
+                    </select>
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="nm-contact-form__submit"
+                >
+                    <span>Send Enquiry</span>
+                    <strong>↗</strong>
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
 
 <footer id="contact-details" class="nm-footer">
 

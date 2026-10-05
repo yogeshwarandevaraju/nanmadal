@@ -6842,7 +6842,7 @@ img {
   position: relative;
   overflow: hidden;
 
-  background: #FFF9EE;
+  background: #073B22;
 
   color: #073B22;
 
@@ -6986,7 +6986,7 @@ img {
 
   margin: 0 0 28px;
 
-  color: #073B22;
+  color: white;
 
   font-family:
     "Cormorant Garamond",
@@ -7352,7 +7352,7 @@ img {
 .nm-footer__services {
   max-width: 390px;
   margin: 0;
-  color: rgba(17, 17, 17, 0.58);
+  color: rgba(237, 233, 233, 0.58);
   font-family: "DM Sans", sans-serif;
   font-size: 11px;
   line-height: 1.85;
@@ -7380,7 +7380,7 @@ img {
   position: relative;
   display: inline-block;
   margin-bottom: 13px;
-  color: black;
+  color: white;
   font-family: "DM Sans", sans-serif;
   font-size: 13px;
   text-decoration: none;
@@ -7405,7 +7405,7 @@ img {
 
 .nm-footer__phone,
 .nm-footer__email {
-  color: black;
+  color: white;
   font-family: "DM Sans", sans-serif;
   font-size: 13px;
   text-decoration: none;
@@ -7447,7 +7447,7 @@ img {
 
 .nm-footer__location p {
   margin: 0 0 10px;
-  color: black;
+  color: white;
   font-family: "DM Sans", sans-serif;
   font-size: 13px;
   line-height: 1.7;
@@ -7481,7 +7481,7 @@ img {
 }
 
 .nm-footer__bottom small {
-  color: rgba(2, 2, 2, 0.42);
+  color: rgba(250, 249, 249, 0.42);
   font-family: "DM Sans", sans-serif;
   font-size: 10px;
 }
@@ -7570,3 +7570,570 @@ img {
   }
 }
 
+/* =========================================================
+   NANMADAL CONTACT CTA
+   ========================================================= */
+
+.nm-contact-cta {
+    position: relative;
+    overflow: hidden;
+
+    padding: 110px 0;
+
+    background:
+        radial-gradient(
+            circle at 12% 80%,
+            rgba(18, 97, 58, 0.08),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 15%,
+            rgba(217, 150, 45, 0.10),
+            transparent 30%
+        ),
+        var(--nm-cream);
+}
+
+
+/* ---------- Container ---------- */
+
+.nm-contact-cta__container {
+    width: min(1240px, calc(100% - 48px));
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.95fr)
+        minmax(420px, 0.75fr);
+
+    align-items: center;
+
+    gap: 100px;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.nm-contact-cta__content {
+    max-width: 620px;
+}
+
+
+/* ---------- Eyebrow ---------- */
+
+.nm-contact-cta__eyebrow {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+    color: var(--nm-gold);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+
+.nm-contact-cta__eyebrow > span {
+    width: 36px;
+    height: 1px;
+
+    background: var(--nm-gold);
+}
+
+
+/* ---------- Heading ---------- */
+
+.nm-contact-cta__content h2 {
+    margin: 0;
+
+    color: var(--nm-green);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: clamp(54px, 6vw, 88px);
+
+    font-weight: 600;
+
+    line-height: 0.9;
+
+    letter-spacing: -0.045em;
+}
+
+
+.nm-contact-cta__content h2 em {
+    display: block;
+
+    margin-top: 10px;
+
+    color: var(--nm-gold);
+
+    font-weight: 500;
+
+    font-style: italic;
+}
+
+
+/* ---------- Description ---------- */
+
+.nm-contact-cta__content > p {
+    max-width: 530px;
+
+    margin: 30px 0 0;
+
+    color: var(--nm-muted);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* ---------- Statement ---------- */
+
+.nm-contact-cta__statement {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 28px;
+
+    color: var(--nm-green);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+
+.nm-contact-cta__statement span:not(:last-child)::after {
+    content: "•";
+
+    margin-left: 10px;
+
+    color: var(--nm-gold);
+}
+
+
+/* ---------- WhatsApp ---------- */
+
+.nm-contact-cta__whatsapp {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 16px;
+
+    margin-top: 34px;
+
+    padding: 15px 22px;
+
+    color: var(--nm-green);
+
+    border: 1px solid rgba(7, 59, 34, 0.18);
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.nm-contact-cta__whatsapp:hover {
+    color: var(--nm-white);
+
+    background: var(--nm-green);
+
+    border-color: var(--nm-green);
+
+    transform: translateY(-3px);
+}
+
+
+.nm-contact-cta__whatsapp strong {
+    color: var(--nm-gold);
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   FORM CARD
+   ========================================================= */
+
+.nm-contact-cta__form-wrap {
+    position: relative;
+
+    padding: 42px;
+
+    border: 1px solid rgba(196, 122, 18, 0.20);
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.92),
+            rgba(255, 249, 238, 0.92)
+        );
+
+    box-shadow:
+        0 25px 70px rgba(7, 59, 34, 0.09);
+}
+
+
+/* ---------- Form Heading ---------- */
+
+.nm-contact-cta__form-heading {
+    margin-bottom: 30px;
+}
+
+
+.nm-contact-cta__form-heading span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--nm-gold);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+}
+
+
+.nm-contact-cta__form-heading h3 {
+    margin: 0;
+
+    color: var(--nm-green);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 34px;
+
+    font-weight: 600;
+
+    line-height: 1.05;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.nm-contact-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* ---------- Form Group ---------- */
+
+.nm-form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.nm-form-group label {
+    color: var(--nm-green);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+
+/* ---------- Inputs ---------- */
+
+.nm-form-group input,
+.nm-form-group select {
+    width: 100%;
+
+    min-height: 52px;
+
+    padding: 0 15px;
+
+    color: var(--nm-text);
+
+    border: 1px solid rgba(7, 59, 34, 0.15);
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.nm-form-group input::placeholder {
+    color: #9A9F9B;
+}
+
+
+.nm-form-group input:focus,
+.nm-form-group select:focus {
+    border-color: var(--nm-gold);
+
+    background: var(--nm-white);
+
+    box-shadow:
+        0 0 0 3px rgba(196, 122, 18, 0.08);
+}
+
+
+/* ---------- Select ---------- */
+
+.nm-form-group select {
+    appearance: auto;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
+.nm-contact-form__submit {
+    width: 100%;
+
+    min-height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-top: 5px;
+
+    padding: 0 22px;
+
+    color: var(--nm-white);
+
+    border: 1px solid var(--nm-green);
+
+    border-radius: 999px;
+
+    background: var(--nm-green);
+
+    cursor: pointer;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.nm-contact-form__submit:hover {
+    background: var(--nm-gold);
+
+    border-color: var(--nm-gold);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 14px 30px rgba(196, 122, 18, 0.18);
+}
+
+
+.nm-contact-form__submit strong {
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .nm-contact-cta {
+        padding: 90px 0;
+    }
+
+    .nm-contact-cta__container {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .nm-contact-cta__content {
+        max-width: 720px;
+    }
+
+    .nm-contact-cta__form-wrap {
+        width: min(100%, 650px);
+
+        margin: 0 auto;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .nm-contact-cta {
+        padding: 75px 0;
+    }
+
+    .nm-contact-cta__container {
+        width: calc(100% - 36px);
+
+        gap: 45px;
+    }
+
+    .nm-contact-cta__content h2 {
+        font-size: clamp(50px, 14vw, 72px);
+    }
+
+    .nm-contact-cta__content > p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .nm-contact-cta__form-wrap {
+        padding: 32px 25px;
+
+        border-radius: 15px;
+    }
+
+    .nm-contact-cta__form-heading h3 {
+        font-size: 30px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+    .nm-contact-cta {
+        padding: 65px 0;
+    }
+
+    .nm-contact-cta__container {
+        width: calc(100% - 28px);
+    }
+
+    .nm-contact-cta__eyebrow {
+        font-size: 9px;
+    }
+
+    .nm-contact-cta__content h2 {
+        font-size: clamp(46px, 14.5vw, 64px);
+    }
+
+    .nm-contact-cta__statement {
+        font-size: 18px;
+
+        gap: 7px;
+    }
+
+    .nm-contact-cta__statement span:not(:last-child)::after {
+        margin-left: 7px;
+    }
+
+    .nm-contact-cta__whatsapp {
+        width: 100%;
+    }
+
+    .nm-contact-cta__form-wrap {
+        padding: 28px 20px;
+    }
+
+    .nm-contact-cta__form-heading {
+        margin-bottom: 24px;
+    }
+
+    .nm-contact-cta__form-heading h3 {
+        font-size: 28px;
+    }
+
+    .nm-contact-form {
+        gap: 17px;
+    }
+
+    .nm-form-group input,
+    .nm-form-group select {
+        min-height: 50px;
+
+        font-size: 13px;
+    }
+
+}
