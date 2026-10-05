@@ -1433,7 +1433,7 @@ img {
 }
 
 .nm-hero__intro p {
-    font-size: clamp(23px, 2.1vw, 32px);
+    font-size: clamp(23px, 2.1vw, 20px);
 }
 
 .nm-hero__description {
@@ -8156,4 +8156,23 @@ section[id] {
         scroll-margin-top: 75px;
     }
 
+}
+
+/* =========================================
+   HERO TAGLINE
+   ========================================= */
+
+.nm-hero__title em {
+    font-size: clamp(28px, 3vw, 35px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    .nm-hero__title em {
+        font-size: clamp(21px, 5.5vw, 28px);
+        white-space: nowrap;
+    }
 }
